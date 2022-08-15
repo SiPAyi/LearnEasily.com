@@ -1,0 +1,85 @@
+
+    body{
+            margin:0px auto;
+    }
+        div.intro{
+            height:30vh;
+            background: url('./websiteBackground.jpeg');
+            background-position: center;
+            background-size: cover;
+        }
+            div.name{
+                text-align: center;
+                font-size: 3em;
+                padding:8vh 0px;
+                color:green;
+            }
+            span#quote{
+                font-size: 16px !important;
+                color:black;
+                font-style:italic;
+            }
+
+        div.navbar{
+            display: flex;
+            flex-direction: row;
+            background-color:rgb(97, 209, 147);
+            position:sticky;
+            top:0px;
+            margin-bottom:5vh;
+        }
+            div.tabs{
+                margin:auto;
+                padding: 16px;
+            }
+            div.tabs:hover{
+                background-color:rgb(121, 218, 164);
+                border-radius: 150px;
+            }
+
+            div a{
+                color:black;
+                text-decoration: none;
+            }
+
+            span.menulines hr{
+                width:25px;
+            }
+            input{
+                width:250px;
+                height:30px;
+            }
+
+
+        @media screen and (min-width:900px) {
+            div.menu{
+                display: none;
+            }
+            div:not(.intro, .navbar, .nav){
+                max-width:900px;
+                margin: auto;
+            }
+
+        }
+        @media screen and (max-width:900px) {
+            div.home, div.physics, div.chemistry, div.maths{
+                display:none;
+            }
+            div.tabs{
+                padding:10px;
+                margin:0px auto 0px 5px px;
+            }
+            div.login{
+                margin-left:auto;
+            }
+            div.search{
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width:500px){
+            input{
+                width:100px;
+            }
+        }
+        
